@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Weather For My GF</title>
 </head>
 <body>
-    
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" data-tab="weather">Weather</a></li>
+                <li><a href="#" data-tab="cutie">Cutie</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="weather" class="tab-content active">
+        <div class="top-text">
+            <h1>Тут погода</h1>
+            <p>Напиши любой город и нажми на кнопочку!</p>
+        </div>
+        <div class="weather-form">
+            <input type="text" placeholder="Введите город..." id="city-input">
+            <button id="get-weather-btn">Показать погоду</button>
+        </div>
+        <div id="weather-result"></div>
+    </section>
+
+    <section id="cutie" class="tab-content">
+        <div class="top-text">
+            <h1>Ты сегодня...</h1>
+            <p>Кликни на кнопку, чтобы получить комплимент!</p>
+        </div>
+        <button id="get-compliment-btn">Милый комплимент</button>
+        <div id="compliment-result"></div>
+    </section>
+
 </body>
+<script src="scripts/main.js"></script>
 </html>
